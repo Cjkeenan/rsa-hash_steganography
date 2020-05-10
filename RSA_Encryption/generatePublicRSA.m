@@ -11,8 +11,11 @@
 %     return e
 
 function [encryptionPublicKey] = generatePublicRSA(p,q)
-%GENERATEPUBLICRSA Summary of this function goes here
-%   Detailed explanation goes here
+%GENERATE_PUBLIC_RSA: This function implements the RSA decryption key
+%generation algorithm to generate a public encryption key given two random
+%relatively prime numbers p and q
+%   Input: Two relatively prime numbers p and q
+%   Output: Public Encryption Key
     n = p*q;
     phi = (p-1)*(q-1);
     

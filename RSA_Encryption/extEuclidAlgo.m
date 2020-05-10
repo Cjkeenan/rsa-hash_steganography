@@ -9,8 +9,11 @@
 %     return a, x0, y0
 
 function [gcd,s,t] = extEuclidAlgo(a,b)
-%EXTEUCLIDALGO Summary of this function goes here
-%   Detailed explanation goes here
+%EXTEUCLIDALGO: This function implements the Extended Euclidean Algorithm
+%in order to find the GCD of two numbers along with what numbers are needed
+%to multiply by the given numbers in order to equal 1 when added
+%   Input: Any two numbers
+%   Output: GCD of those two numbers, s and t such that a*s + b*t = 1
     a = abs(a);
     b = abs(b);
     

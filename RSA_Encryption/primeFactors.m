@@ -13,8 +13,9 @@
 %     return factors
 
 function [p,e] = primeFactors(number)
-%PRIMEFACTORS Summary of this function goes here
-%   Detailed explanation goes here
+%PRIME_FACTORS: This function finds all prime factors of a given number
+%   Input: Any number
+%   Output: Prime factor base, Prime factor exponent
 % Loops to test all integers (2 through number) as PFs
     p = 1;
     e = 1;

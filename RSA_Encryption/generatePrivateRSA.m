@@ -10,8 +10,11 @@
 %     return d
 
 function [decryptionPrivateKey] = generatePrivateRSA(encryptionPublicKey,modulo)
-%GENERATEPRIVATERSA Summary of this function goes here
-%   Detailed explanation goes here
+%GENERATE_PRIVATE_RSA: This function implements the RSA encyption key
+%generation algorithm to generate a private decryption key given the public
+%encryption key and the modulo base
+%   Input: Public Encryption key, modulo base
+%   Output: Private Decryption key
     phi = eulerPhi(modulo);
     gcd = euclidAlgo(encryptionPublicKey,phi);
     if(gcd == 1)
