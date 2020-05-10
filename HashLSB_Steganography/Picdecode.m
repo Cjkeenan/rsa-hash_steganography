@@ -1,4 +1,7 @@
 function [msg] = Picdecode(Im,sizeO)
+%Im     - input image
+%sizeo  - number of bytes give by Picencode
+%msg    - output message decoded from image 
 ArC = blanks(sizeO/7);
 [R,C,P] = size(Im);
 bitC = 1;

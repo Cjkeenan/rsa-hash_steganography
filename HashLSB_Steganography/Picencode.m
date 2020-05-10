@@ -1,4 +1,8 @@
 function [Imo, sizeO] = Picencode(Im,msg)
+%Im     - input image
+%msg    - desired char array message
+%Imo    - output image with message
+%sizeO  - number of bits for message
 [R,C,P] = size(Im);
 [s,sizeM] = size(msg);
 sizeB = sizeM*7;
