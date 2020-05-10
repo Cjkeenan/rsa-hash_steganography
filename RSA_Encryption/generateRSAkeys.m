@@ -21,8 +21,12 @@
 %     return d
 
 function [encryptionPublicKey,decryptionPrivateKey,n] = generateRSAkeys(p,q,bits)
-%GENERATERSAKEYS Summary of this function goes here
-%   Detailed explanation goes here
+%GENERATERSAKEYS: This function generates both the public encryption key
+%and the private decryption key for two given relatively prime numbers p
+%and q of a size around 2^bits
+%   Input: Two relatively prime numbers p and q, intended bits for key
+%   Output: Public encryption key, private decryption key, and the
+%   mutliplication of the two relatively prime numbers
     % Public Key Generation
     n = p*q;
     phi = (p-1)*(q-1);

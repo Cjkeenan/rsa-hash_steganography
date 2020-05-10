@@ -8,8 +8,12 @@
 %     return int(phi)
 
 function [phi] = eulerPhi(number)
-%EULERPHI Summary of this function goes here
-%   Detailed explanation goes here
+%EULERPHI: This function implements Euler's Phi (Totient) function in order
+%to find the counter of numbers up to the given number that are relatively
+%prime to that given number
+%   Input: Any number
+%   Output: Count of how many numbers are relatively prime to the given
+%   number
     [p,e] = primeFactors(number);
     phi = 1;
     for i = 2:size(p,2)

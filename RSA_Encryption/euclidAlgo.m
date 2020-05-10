@@ -13,8 +13,10 @@
 %     return euclidAlgo(smaller, rem)
 
 function [gcd] = euclidAlgo(largerNum,smallerNum)
-%EUCLIDALGO Summary of this function goes here
-%   Detailed explanation goes here
+%EUCLIDALGO: This function implements the standard Euclidean Algorithm to
+%find the GCD of two numbers recursively
+%   Input: Any two numbers
+%   Output: GCD of the two numbers
     if(smallerNum > largerNum)
         temp = largerNum;
         largerNum = smallerNum;
