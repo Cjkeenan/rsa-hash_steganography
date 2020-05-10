@@ -9,5 +9,4 @@ text = "To be, or not to be- that is the question: Whether 'tis nobler in the mi
 [e,d,n] = generateRSAkeys(p,q,bits);
 
 [imageEncoded, imageSize] = encodeHashRSA(e,n,image,text);
-
 textDecoded = decodeHashRSA(d,n,imageEncoded,imageSize);
